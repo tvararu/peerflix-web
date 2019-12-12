@@ -6,7 +6,8 @@ body {
   color: #222;
   text-shadow: 0 1px #fff;
 }
-#torrent-url, #torrent-query {
+#torrent-url,
+#torrent-query {
   height: 42px;
 }
 #torrent-query {
@@ -25,32 +26,47 @@ body {
 #loader {
   float: right;
   position: relative;
-  top:30px;
-  right:20px;
+  top: 30px;
+  right: 20px;
   display: none;
 }
-.start-btn, .start-btn:hover, .start-btn:active, .start-btn:focus {
+.start-btn,
+.start-btn:hover,
+.start-btn:active,
+.start-btn:focus {
   color: #fff;
-  border-color: #00CB95;
-  background-color: #00CB95;
+  border-color: #00cb95;
+  background-color: #00cb95;
 }
-.stop-btn, .stop-btn:hover, .stop-btn:active, .stop-btn:focus {
+.stop-btn,
+.stop-btn:hover,
+.stop-btn:active,
+.stop-btn:focus {
   color: #fff;
-  border-color: #FF646C;
-  background-color: #FF646C;
+  border-color: #ff646c;
+  background-color: #ff646c;
 }
-.control-btn, .control-btn:hover, .control-btn:active, .control-btn:focus {
+.control-btn,
+.control-btn:hover,
+.control-btn:active,
+.control-btn:focus {
   color: #777;
   height: 75px;
   border: 1px solid #ccc;
   background-color: #fafafa;
 }
-.search-btn, .search-btn:hover, .search-btn:active, .search-btn:focus {
+.search-btn,
+.search-btn:hover,
+.search-btn:active,
+.search-btn:focus {
   color: #fff;
-  border-color: #0080C8;
-  background-color: #0080C8;
+  border-color: #0080c8;
+  background-color: #0080c8;
 }
-.glyphicon-pause, .glyphicon-play, .glyphicon-step-backward, .glyphicon-step-forward {
+.glyphicon-pause,
+.glyphicon-play,
+.glyphicon-step-backward,
+.glyphicon-step-forward {
   font-size: 1.5em;
 }
 .padding-fix {
@@ -78,108 +94,71 @@ body {
 }
 
 @-webkit-keyframes spinning {
-    0%, 100% {
-        box-shadow:
-             0em  1em 0 .125em #bbb, /* bottom */
-             1em  1em 0 .250em #bbb, /* bottom right */
-             1em  0em 0 .125em #bbb, /* right */
-             1em -1em 0    0em #bbb, /* top right */
-             0em -1em 0    0em #bbb, /* top */
-            -1em -1em 0    0em #bbb, /* top left */
-            -1em  0em 0    0em #bbb, /* left */
-            -1em  1em 0    0em #bbb; /* bottom left */
-    }
+  0%,
+  100% {
+    box-shadow: 0em 1em 0 0.125em #bbb, /* bottom */ 1em 1em 0 0.25em #bbb,
+      /* bottom right */ 1em 0em 0 0.125em #bbb, /* right */ 1em -1em 0 0em #bbb,
+      /* top right */ 0em -1em 0 0em #bbb, /* top */ -1em -1em 0 0em #bbb,
+      /* top left */ -1em 0em 0 0em #bbb, /* left */ -1em 1em 0 0em #bbb; /* bottom left */
+  }
 
-    12.5% {
-        box-shadow:
-             0em  1em 0    0em #bbb, /* bottom */
-             1em  1em 0 .125em #bbb, /* bottom right */
-             1em  0em 0 .250em #bbb, /* right */
-             1em -1em 0 .125em #bbb, /* top right */
-             0em -1em 0    0em #bbb, /* top */
-            -1em -1em 0    0em #bbb, /* top left */
-            -1em  0em 0    0em #bbb, /* left */
-            -1em  1em 0    0em #bbb; /* bottom left */
-    }
+  12.5% {
+    box-shadow: 0em 1em 0 0em #bbb, /* bottom */ 1em 1em 0 0.125em #bbb,
+      /* bottom right */ 1em 0em 0 0.25em #bbb,
+      /* right */ 1em -1em 0 0.125em #bbb, /* top right */ 0em -1em 0 0em #bbb,
+      /* top */ -1em -1em 0 0em #bbb, /* top left */ -1em 0em 0 0em #bbb,
+      /* left */ -1em 1em 0 0em #bbb; /* bottom left */
+  }
 
-    25% {
-        box-shadow:
-             0em  1em 0    0em #bbb, /* bottom */
-             1em  1em 0    0em #bbb, /* bottom right */
-             1em  0em 0 .125em #bbb, /* right */
-             1em -1em 0 .250em #bbb, /* top right */
-             0em -1em 0 .125em #bbb, /* top */
-            -1em -1em 0    0em #bbb, /* top left */
-            -1em  0em 0    0em #bbb, /* left */
-            -1em  1em 0    0em #bbb; /* bottom left */
-    }
+  25% {
+    box-shadow: 0em 1em 0 0em #bbb, /* bottom */ 1em 1em 0 0em #bbb,
+      /* bottom right */ 1em 0em 0 0.125em #bbb,
+      /* right */ 1em -1em 0 0.25em #bbb,
+      /* top right */ 0em -1em 0 0.125em #bbb, /* top */ -1em -1em 0 0em #bbb,
+      /* top left */ -1em 0em 0 0em #bbb, /* left */ -1em 1em 0 0em #bbb; /* bottom left */
+  }
 
-    37.5% {
-        box-shadow:
-             0em  1em 0    0em #bbb, /* bottom */
-             1em  1em 0    0em #bbb, /* bottom right */
-             1em  0em 0    0em #bbb, /* right */
-             1em -1em 0 .125em #bbb, /* top right */
-             0em -1em 0 .250em #bbb, /* top */
-            -1em -1em 0 .125em #bbb, /* top left */
-            -1em  0em 0    0em #bbb, /* left */
-            -1em  1em 0    0em #bbb; /* bottom left */
-    }
+  37.5% {
+    box-shadow: 0em 1em 0 0em #bbb, /* bottom */ 1em 1em 0 0em #bbb,
+      /* bottom right */ 1em 0em 0 0em #bbb, /* right */ 1em -1em 0 0.125em #bbb,
+      /* top right */ 0em -1em 0 0.25em #bbb, /* top */ -1em -1em 0 0.125em #bbb,
+      /* top left */ -1em 0em 0 0em #bbb, /* left */ -1em 1em 0 0em #bbb; /* bottom left */
+  }
 
-    50% {
-        box-shadow:
-             0em  1em 0    0em #bbb, /* bottom */
-             1em  1em 0    0em #bbb, /* bottom right */
-             1em  0em 0    0em #bbb, /* right */
-             1em -1em 0    0em #bbb, /* top right */
-             0em -1em 0 .125em #bbb, /* top */
-            -1em -1em 0 .250em #bbb, /* top left */
-            -1em  0em 0 .125em #bbb, /* left */
-            -1em  1em 0    0em #bbb; /* bottom left */
-    }
+  50% {
+    box-shadow: 0em 1em 0 0em #bbb, /* bottom */ 1em 1em 0 0em #bbb,
+      /* bottom right */ 1em 0em 0 0em #bbb, /* right */ 1em -1em 0 0em #bbb,
+      /* top right */ 0em -1em 0 0.125em #bbb, /* top */ -1em -1em 0 0.25em #bbb,
+      /* top left */ -1em 0em 0 0.125em #bbb, /* left */ -1em 1em 0 0em #bbb; /* bottom left */
+  }
 
-    62.5% {
-        box-shadow:
-             0em  1em 0    0em #bbb, /* bottom */
-             1em  1em 0    0em #bbb, /* bottom right */
-             1em  0em 0    0em #bbb, /* right */
-             1em -1em 0    0em #bbb, /* top right */
-             0em -1em 0    0em #bbb, /* top */
-            -1em -1em 0 .125em #bbb, /* top left */
-            -1em  0em 0 .250em #bbb, /* left */
-            -1em  1em 0 .125em #bbb; /* bottom left */
-    }
+  62.5% {
+    box-shadow: 0em 1em 0 0em #bbb, /* bottom */ 1em 1em 0 0em #bbb,
+      /* bottom right */ 1em 0em 0 0em #bbb, /* right */ 1em -1em 0 0em #bbb,
+      /* top right */ 0em -1em 0 0em #bbb, /* top */ -1em -1em 0 0.125em #bbb,
+      /* top left */ -1em 0em 0 0.25em #bbb, /* left */ -1em 1em 0 0.125em #bbb; /* bottom left */
+  }
 
-    75% {
-        box-shadow:
-             0em  1em 0 .125em #bbb, /* bottom */
-             1em  1em 0    0em #bbb, /* bottom right */
-             1em  0em 0    0em #bbb, /* right */
-             1em -1em 0    0em #bbb, /* top right */
-             0em -1em 0    0em #bbb, /* top */
-            -1em -1em 0    0em #bbb, /* top left */
-            -1em  0em 0 .125em #bbb, /* left */
-            -1em  1em 0 .250em #bbb; /* bottom left */
-    }
+  75% {
+    box-shadow: 0em 1em 0 0.125em #bbb, /* bottom */ 1em 1em 0 0em #bbb,
+      /* bottom right */ 1em 0em 0 0em #bbb, /* right */ 1em -1em 0 0em #bbb,
+      /* top right */ 0em -1em 0 0em #bbb, /* top */ -1em -1em 0 0em #bbb,
+      /* top left */ -1em 0em 0 0.125em #bbb, /* left */ -1em 1em 0 0.25em #bbb; /* bottom left */
+  }
 
-    87.5% {
-        box-shadow:
-             0em  1em 0 .250em #bbb, /* bottom */
-             1em  1em 0 .125em #bbb, /* bottom right */
-             1em  0em 0    0em #bbb, /* right */
-             1em -1em 0    0em #bbb, /* top right */
-             0em -1em 0    0em #bbb, /* top */
-            -1em -1em 0    0em #bbb, /* top left */
-            -1em  0em 0    0em #bbb, /* left */
-            -1em  1em 0 .125em #bbb; /* bottom left */
-    }
+  87.5% {
+    box-shadow: 0em 1em 0 0.25em #bbb, /* bottom */ 1em 1em 0 0.125em #bbb,
+      /* bottom right */ 1em 0em 0 0em #bbb, /* right */ 1em -1em 0 0em #bbb,
+      /* top right */ 0em -1em 0 0em #bbb, /* top */ -1em -1em 0 0em #bbb,
+      /* top left */ -1em 0em 0 0em #bbb, /* left */ -1em 1em 0 0.125em #bbb; /* bottom left */
+  }
 }
 
 .spinner {
-    display: inline-block;
-    font-size: 10px;
-    width: .5em;
-    height: .5em;
-    border-radius: 50%;
-    -webkit-animation: spinning .75s infinite;
+  display: inline-block;
+  font-size: 10px;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  -webkit-animation: spinning 0.75s infinite;
 }
