@@ -63,7 +63,9 @@ $(document).ready(function() {
     $("#torrent-url").val("");
     $.post("play", { url: url })
       .done(function(res) {
-        window.open("http://" + location.hostname + ":" + res.port, "_blank");
+        var url = "http://" + location.hostname + ":" + res.port;
+        $("#streaming-url").attr("href", url);
+        $("#streaming-url").text(url);
       })
       .fail(function() {
         $("#loader").hide();
